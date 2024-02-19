@@ -21,11 +21,12 @@ public class firstBadVersion {
     }
 
     private static boolean isBad(int index) {
-        // Simulating a bad version at index 33
+        // Simulating a bad version 
         return index >= 2;
     }
 
     public static void main(String[] args) {
         System.out.println(firstBadVersion(200));
+        // Should return 2
     }
 }
