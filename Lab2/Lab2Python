@@ -1,1 +1,14 @@
+def is_anagram(s, t):
+    s = s.lower().replace(" ", "").replace("-", "").replace("+", "").replace("!", "").replace(",", "").replace(".", "").replace("?", "").replace("'", "")
+    t = t.lower().replace(" ", "").replace("-", "").replace("+", "").replace("!", "").replace(",", "").replace(".", "").replace("?", "").replace("'", "")
 
+    s_array = list(s)
+    t_array = list(t)
+
+    if len(s_array) != len(t_array):
+        return False
+
+    s_array.sort()
+    t_array.sort()
+
+    return s_array == t_array
