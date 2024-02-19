@@ -1,0 +1,16 @@
+
+def first_bad_version(total):
+    left = 1
+    right = total
+
+    while left < right:
+        middle = left + (right - left) // 2
+        result = is_bad(middle)
+
+        if result:
+            right = middle 
+        else:
+            left = middle + 1
+    return left
+
+
