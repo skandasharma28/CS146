@@ -1,0 +1,3 @@
+#I tackled this problem by using hashMaps that we learnt in class today.
+#Learnt about the "Continue" statement which helps to skip of the rest of the loop for that iteration.
+#Finally, I also learnt how to add array elements to a list using "Arrays.asList() command.
