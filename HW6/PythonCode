@@ -1,0 +1,26 @@
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]: 
+        result = []
+        nums.sort()
+
+        for i in range(len(nums) - 2):
+            # Skipping duplicates!
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+
+            target = -nums[i]
+            num_dict = {}
+
+            for j in range(i + 1, len(nums)):
+                complement = target - nums[j]
+
+                if complement in num_dict:
+                    result.append([nums[i], complement, nums[j]])
+
+                    # Skip duplicates
+                    while j + 1 < len(nums) and nums[j] == nums[j + 1]:
+                        j += 1
+
+                num_dict[nums[j]] = j
+
+        return result
