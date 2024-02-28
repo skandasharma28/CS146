@@ -1,0 +1,3 @@
+# We were asked to calcualte the largest possible palindrome from a string and return the lenght of it
+# I used a hashMap to add all the unqiue chars and calcuate their freq in its value
+# With this logic, I was able to solve the problem
