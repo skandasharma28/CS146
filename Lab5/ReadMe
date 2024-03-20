@@ -1,4 +1,4 @@
 # Used inorder traversal to get the BST in an ArrayList in a sorted way, in a helper class
-# Then used the actual method listed on the Lab to check if the array is actually sorted. 
+# Then used the actual method listed on the Lab to check if the array is actually sorted by implementing the helper class. 
 # Returned true if the array is sorted - BST is valid
 # False otherwise
