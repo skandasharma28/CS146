@@ -13,7 +13,7 @@ public class isValid
 		
 		for(int i = 0; i< list2.size() - 1; i++)
 		{
-			if(list2.get(i) > list2.get( i + 1))
+			if(list2.get(i) >= list2.get( i + 1))
 			{
 				return false;
 			}
