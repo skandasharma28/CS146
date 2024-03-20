@@ -1,4 +1,4 @@
-# Used a slightly differernt approach for java and python as I was not fully sure which implementation was right.
-# In java, I tried to traverse through the left of the BST and then right of the BST while actively comparing the values to see if the tree is valid or not
-# In python I used a couple of other conidtions to better help me traverse through the BST 
-# I am fully not sure if either approach is right, but this was my best effort. 
+# Used inorder traversal to get the BST in an ArrayList in a sorted way, in a helper class
+# Then used the actual method listed on the Lab to check if the array is actually sorted. 
+# Returned true if the array is sorted - BST is valid
+# False otherwise
