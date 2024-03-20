@@ -1,1 +1,10 @@
-#This is a readMe file
+#This is a readMe -- explanation file
+
+# To get the lowest common ancestor of 2 nodes, we start by traversing from the root
+# Based on the values of p and q - relative to the root, we move left, right or return our lowest common anscestor
+# At each step, we see if p and q are in the same subTree (this is when they are both either less than the current node, or greater than the current node)
+# If they are in the same subTree, we keep traversing left(if lesser than current node) or right (if greater than current node)
+
+# We traverse until either:
+# 1. One of p or q is equal to the current node -- then we return that, since that will be the lowest common ansector regardless of the other value. This is because they are in the same subTree
+#2. p and q are differnt subTree (when p > current and q < current OR viceversa), then we return current as it will be the lowest common Ancestor.
