@@ -1,16 +1,17 @@
-def is_valid_bst(root):
-    def in_order(node, lst):
-        if node is None:
-            return
-        in_order(node,lst)
-        lst.append(node.val)
-        in_order(node,lst)
+class Solution:
+    def isValidBST(self, root):
+        def in_order(node, lst):
+            if node is None:
+                return
+            in_order(node.left, lst)  # Traverse left subtree
+            lst.append(node.val)      # Append current node's value
+            in_order(node.right, lst) # Traverse right subtree
+            
+        lst = []
+
+        in_order(root, lst)
         
-        
-    lst = []
-    in_order(root, lst)
-    
-    for i in range(len(lst) - 1):
-        if lst[i] > lst[i + 1]:
-            return False
-    return True
+        for i in range(len(lst) - 1):
+            if lst[i] >= lst[i + 1]: 
+                return False
+        return True
