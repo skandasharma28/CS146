@@ -1,0 +1,17 @@
+#In this problem, given an BST, I was asked to return an ArrrayList of lists - where each level (height) of the list is seprated in the subList. 
+#Basically each level should have its own subList, and the big list of the all the subLists will be returned.
+
+# I knew that I had to use a Queue for this problem as it is a FIFO problem.
+# I visualzied it on a piece of paper, and came up with a high level algorithm:
+
+#First I would have to add the root to the Queue
+#Second, I would need a loop which runs until the queue is empty
+# In this loop, I would need another loop which runs exactly the # of times = the size of the nodes on that level
+# For this to happen, the size of the queue should be taken before the second loop, as the second loop adds the pooped node's children in the queue.
+
+#Basically, a queue with ONLY the nodes on that level goes in the second loop - where it exactly runs its size # of times, and comes out with ONLY its children (the next level) and repeats until the Queue is empty.
+#At the end of each second loop, the subList is added to the main list. 
+
+#Finally, after the first loop terminates (queue is empty), the method returns the main list!
+
+#Very hard to visualize this, but will make sense once you read my code!
