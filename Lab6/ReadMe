@@ -1,1 +1,19 @@
+#I used the topological sort algorithm, specifically Kahn's algorithm, to solve this problem.
+#The idea behind this is at that, there is no cycle in the graph, then we can return true, otherwise, false
+
+#To implement the Kahn's alogroithm, which gives the topological order of the graph, we need to put the information given about the course and pre Req in a
+adjacency List.
+# We also need an array that keeps track of the in Degree's of each course (# of Pre Reqs)
+# Finally, we need an ArrayList which represents the topological order
+
+#We populate the adjacency List by going through the row(course) and col (pre req) pairs given. The index in the array represents the course,
+#and the list represents the pre Reqs
+#Using this, we also populate the inDegree array
+
+#Then, we use a queue to add all courses with 0 in Degrees
+# We run a while loop as long as stack in not empty, where the stack is polled and the in Degree of the destination nodes of the polled node is decreased by 1.
+#This is done until stack is empty
+
+#Finally we check if the size of the topological order ArrayList = numCourses, if true, then no cycle!
+
 
