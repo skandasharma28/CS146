@@ -1,0 +1,6 @@
+# To solve this homework, I used a helper method called fill(), which  uses recursion to flood fill the pixels starting from the location that is given.
+# This recursviely flood fills the pixels UNTIL either the rows or cols go out of bounds, OR the color of the pixel is same as the given color
+
+#In the actaul method, if the given color is the SAME as the oroginal color at the pixel, then it just returns the image
+#Otherwsie, it calls the fill method, where it flood fills untilt the base case is violated
+# It finally returns the modified image from the helper fill method.
