@@ -1,1 +1,13 @@
+# I used  Floyd-Warshall algorithm to find shortest paths from each of cities to all the other cities, in order to solve this problem.
+#I broke it down into 4 parts
 
+#Part 1: I created a distance 2D array which shows the distance between each city
+# I populated it with 0 (distance between same city) and inf (distance between different cities)
+
+#Part 2: I populated the accurate distance information from the edges 2d array paramater
+# Since this is a undirected graph, to and from are the same as from and to distances
+
+#Part 3: Used Floyd-Warshall algorithm to find shortest paths from each of cities to all the other cities
+
+#Part 4: Checked for the city with the least number of connections given the distance threshold constraint 
+# Returned the greater city if there was a tie between 2 cities for the least number of connections.
