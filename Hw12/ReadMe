@@ -1,0 +1,8 @@
+#Used prims algorithm of MSTs to solve this.
+
+#Created adj matrix and initilaized it with neg inf
+#Main change I implemented here was that since there was no house at 0 index ( houses started from 1), I created a 0 house which represents the wells
+#Bascailly, any connection to the 0th house to a nth house, means that house needs a well
+# This was atleast 1 house has a well
+
+#Finally I ran Prims on this updated adj matrix
