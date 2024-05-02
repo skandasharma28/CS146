@@ -1,1 +1,10 @@
+#Used tabulation to solve this dynamic programing coin change problem
 
+#Bascially created a 2D array with (amount + 1) rows and (# coins + 1 col)
+#Stored the min # of coins needed for each amount from 0 until amount and updated it as we moved down the rows.
+#Compared the exisiting # of coins needed to the new # of coins needed as we continue to go through the 2D array updating the min # of coins
+
+#Returned the last entry int the 2d Array (least # of coins as it has been updated throughout) -- it is for the amount
+# If the return # > amount, then we return -1 (as we populate each entry before with amount + 1) before iterating through the 2D array
+
+#Time and space : Theta(N^2).
